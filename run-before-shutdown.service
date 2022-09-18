@@ -1,0 +1,12 @@
+[Unit]
+Description=Run my custom task at shutdown
+DefaultDependencies=no
+Before=shutdown.target reboot.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /home/raspscreen/service/shutdown_screen.py
+TimeoutStartSec=0
+
+[Install]
+WantedBy=shutdown.target reboot.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Run my custom task at Boot
+DefaultDependencies=no
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /home/raspscreen/service/boot_screen.py
+
+[Install]
+WantedBy=multi-user.target
