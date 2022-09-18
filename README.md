@@ -7,13 +7,13 @@ boot
 - show its wifi ipV4 for connection
 - show if your servers are alive or not
 
-shutdown
-- bye bye message
-
 ```
 how to add:
 [[<Name>],[<host>],[<port>]]
 ```
+
+shutdown
+- bye bye message
 
 ## Hardware 
 - 2.13inch waveshare 
