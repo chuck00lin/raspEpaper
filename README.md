@@ -2,9 +2,13 @@
 
 ## Function
 
+boot
 - show its wifi ESSID 
 - show its wifi ipV4 for connection
 - show if your servers are alive or not
+
+shutdown
+- bye bye message
 
 ```
 how to add:
