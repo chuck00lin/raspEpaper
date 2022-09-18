@@ -18,9 +18,9 @@ import traceback
 logging.basicConfig(level=logging.DEBUG)
 
 # ---Server Info---
-servInfo = [["piRemo", "140.112.94.128", "14091"],
-            ["piHome", "192.168.1.203", "8123"],
-            ["Gazebo", "140.112.183.225", "22512"]]
+servInfo = [["piRemo", "-host ip-", "14091"],
+            ["piHome", "-host ip-", "8123"],
+            ["Gazebo", "-host ip-", "22512"]]
 
 # -----------
 
