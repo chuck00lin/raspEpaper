@@ -1,4 +1,4 @@
-# Show some info on Epaper
+# Show some info on Epaper V1.0
 
 ## Function
 
