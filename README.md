@@ -1,6 +1,17 @@
 # Show some info on Epaper
 
-### Hardware 
+## Function
+
+- show its wifi ESSID 
+- show its wifi ipV4 for connection
+- show if your servers are alive or not
+
+```
+how to add:
+[[<Name>],[<host>],[<port>]]
+```
+
+## Hardware 
 - 2.13inch waveshare 
 - piZero 1.1 -w
 
