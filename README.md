@@ -48,3 +48,6 @@ source: https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_Manual#Users_Guides_
 - `sudo systemctl enable run-before-shutdown.service`
 
 check with `sudo systemctl status run-after-boot.service`
+
+run every 15 min
+- `*/n * * * * /usr/bin/systemctl restart run-after-boot.service`
