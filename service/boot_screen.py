@@ -18,9 +18,9 @@ import traceback
 logging.basicConfig(level=logging.DEBUG)
 
 # ---Server Info---
-servInfo = [["piRemo", "-host ip-", "14091"],
-            ["piHome", "-host ip-", "8123"],
-            ["Gazebo", "-host ip-", "22512"]]
+servInfo = [["piRemo", "140.112.94.128", "14091"],
+            ["piHome", "192.168.1.203", "8123"],
+            ["Gazebo", "140.112.183.225", "22512"]]
 
 # -----------
 
@@ -62,21 +62,19 @@ try:
 
     # ---my info---
     # draw.text((5,0), "Raspscreen:", font = font15, fill =0) 
-    name = chr(9935)+ wifiName_cmd()
-    draw.text((10,5),name, font = font15, fill = 0) 
-    draw.text((150,5), wifiIp_cmd(), font = font15, fill = 0) 
+    name = wifiName_cmd()
+    draw.text((5,5),name , font = font15, fill = 0) 
+    draw.text((130,5), chr(8214) + wifiIp_cmd(), font = font15, fill = 0) 
     
     # ---Banner line---
     draw.line([(0,35),(235,35)], fill = 0, width = 1)
 
     # ---My Server Info---
-    n1="piRemote"
-    s1="140.112.94.128"
-    p1="14091"
     # draw.text((10,35), servInfo[0][0], font = font15, fill = 0)
     # draw.text((100,35), serverAlive_cmd(servInfo[0][1],servInfo[0][2]), font = font15, fill = 0)
     for i, row in enumerate(servInfo):
-        textInfo = servInfo[i][0] + ": " + servInfo[i][1] + "---" + servInfo[i][2]
+        status= serverAlive_cmd( servInfo[i][1],servInfo[i][2]) 
+        textInfo = servInfo[i][0] + ": " + servInfo[i][1] + "---" + status 
         draw.text((5,40+i*25), textInfo, font = font15, fill = 0) 
     epd.display(epd.getbuffer(image)) 
     logging.info("Goto Sleep...")
