@@ -51,5 +51,3 @@ check with `sudo systemctl status run-after-boot.service`
 
 run every 15 min
 - `*/n * * * * /usr/bin/systemctl restart run-after-boot.service`
-
-<iframe width="528" height="327" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQdiZn-NqW4VvyLJ-RAKwh9HhANekt004b3i-dT2l6Ly_CN6iuJLaV504J_-LrCC5t-BCwR8d__46l_/pubchart?oid=1943139083&amp;format=image"></iframe>
